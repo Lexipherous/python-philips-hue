@@ -89,9 +89,9 @@ class PhilipsHueLights:
 
 parser = argparse.ArgumentParser()
 state_group = parser.add_mutually_exclusive_group()
-parser.add_argument('-setup', action='store_true')
-parser.add_argument('-room', type=str, help='True or False')
-parser.add_argument('-preset', type=str, help='Specify a default colour or on/off')
+parser.add_argument('-setup', help='Generates the API key for your Hue bridge', action='store_true')
+parser.add_argument('-room', type=str, help='Room name. Use quotations if spaces are in the name.')
+parser.add_argument('-preset', type=str, help='Specify some presets built-in. (red, warm, orange, yellow, green, turquoise, blue, purple, magenta, pink, white)')
 parser.add_argument('-bri', type=int, help='Set a rooms lights brightness (0–255)')
 parser.add_argument('-hue', type=int, help='Set a rooms lights hue (0–65535)')
 parser.add_argument('-sat', type=int, help='Set a rooms lights saturation (0–255)')
