@@ -39,7 +39,7 @@ class PhilipsHueLights:
             config_parser = ConfigParser()
 
             config_parser['philips_hue_lights'] = {'key': result[0]['success']['username']}
-            with open('lights.ini', 'w') as configfile:  # save
+            with open(path, 'w') as configfile:  # save
                 config_parser.write(configfile)
 
             print(f"Successfully generated an API key to: `{path}`. Use -h to use this script :)")
