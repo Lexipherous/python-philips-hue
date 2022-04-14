@@ -1,5 +1,5 @@
 ### python-philips-hue
-A simple Python3 script that allows you to change Rooms in your Philips Hue Lights setup  
+A simple Python3 script that allows you to change Rooms in your Philips Hue Lights setup, originally intended to work alongside the Elgato Streamdeck
 
 #### Setup
 + Press the button on the Philips Hue Bridge  
